@@ -189,6 +189,7 @@ Tangerine.bootSequence =
     document.addEventListener "deviceready"
       ,
         ->
+          console.log("deviceread event fired.")
           document.addEventListener "online",  -> Tangerine.online = true
           document.addEventListener "offline", -> Tangerine.online = false
 
